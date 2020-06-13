@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <div id="container">
+        <h1 id="title">Hari's Restuarant Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the business
+        </p>
+      <form action="" id="survey-form">
+          <div>
+            <label for="name" id="name-label" class="label-form">Name</label>
+            <p>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="name"
+              required
+              maxlength="20"
+            />
+          </p>
+        </div>
+
+          <div>
+            <label for="email" id="email-label" class="label-form">Email address</label>
+            <p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              maxlength="50"
+            />
+          </p>
+          </div>
+
+          <div>
+            <label for="number" id="number-label" class="label-form">Age</label>
+            <p>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="age"
+              required
+              min="18"
+              max="200"
+            />
+          </p>
+          </div>
+          <div>
+          <label for="food-label" class="label-form">Which type of food is your favorite?</label>
+          <p>
+          <select id="dropdown" name="food">
+            <option value="" selected disabled>Please select</option>
+            <option value="beans">Beans</option>
+            <option value="sausages">Sausages</option>
+            <option value="chicken">Chicken</option>
+            <option value="beef">Beef</option>
+            <option value="pork">Pork</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        </div>
+
+        <div>
+          <label for="radio-label" class="label-form">Would you recommend Hari's Restuarant to a friend?</label>
+          <p>
+            <input type="radio" name="radio-label" value="yes" checked> Yes<br>
+            <input type="radio" name="radio-label" value="no"> No<br>
+            <input type="radio" name="radio-label" value="maybe"> Maybe
+        </p>
+        </div>
+
+          <div>
+            <label for="improvement-label" class="label-form">What would you like to see improved? (Check all that apply)</label>
+            <p>
+            <input type="checkbox" name="food1" value="spice">
+            <label for="food1"> Food spice</label><br>
+            <input type="checkbox" name="food2" value="Menu">
+            <label for="food2"> Menu variety</label><br>
+            <input type="checkbox" name="food3" value="Hygiene" checked>
+            <label for="food3"> Hygiene</label><br>
+            <input type="checkbox" name="food4" value="Soup">
+            <label for="food4"> Soup</label><br>
+            <input type="checkbox" name="food5" value="Salads">
+            <label for="food5"> Salads</label><br><br>
+            </p>
+          </div>
+          <div>
+            <label for="w3review" class="label-form">Any comments or suggestions?</label>
+            <p>
+            <textarea id="comment" name="comment" rows="4" cols="50">
+              </textarea>
+          </p>
+        </div>
+          <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

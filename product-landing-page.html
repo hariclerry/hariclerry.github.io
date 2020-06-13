@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="landing.css" />
+    <title>Clerry's landing page</title>
+  </head>
+
+  <body>
+      <header id="header">
+        <nav id="nav-bar">
+          <img src="./photos/coffee.png" alt="" id="header-img">
+          <p>The Acholi recipes</p>
+            <ul class="nav-link">
+                <li> <a href="#features">Features</a></li>
+                <li><a href="#video">How it works</a></li>
+                <li><a href="#price">Pricing</a></li>
+            </ul>
+        </nav>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" id="email" name="email" value="Enter email...">
+            <input type="submit" id="submit" name="submit" value="Get started">
+        </form>
+      </header>
+      <div id="main">
+      <div class="container">
+      <section id="features">
+        <div class="recipes-card">
+            <img src="./photos/food2.jpeg" alt="Avatar" style="width:100%">
+            <div class="recipes-text">
+              <h4><b>John Doe</b></h4> 
+              <p>Architect & Engineer</p> 
+            </div>
+          </div>
+
+          <div class="recipes-card">
+            <img src="./photos/food3.jpeg" alt="Avatar" style="width:100%">
+            <div class="recipes-text">
+              <h4><b>John Doe</b></h4> 
+              <p>Architect & Engineer</p> 
+            </div>
+          </div>
+
+          <div class="recipes-card">
+            <img src="./photos/food4.jpeg" alt="Avatar" style="width:100%">
+            <div class="recipes-text">
+              <h4><b>John Doe</b></h4> 
+              <p>Architect & Engineer</p> 
+            </div>
+          </div> 
+    </section>
+      <section id="video">
+          <video src="./videos/soup.mp4" style="width: 100%; object-fit: cover;" controls></video>
+    </section>
+    
+      <section id="price">
+        <!-- <div class="pricing-grid"> -->
+            <div class="plan plan1">
+    
+            <h2>Cat</h2>
+            <p>Common, yet regarded by many as the worst house pet</p>
+                <p class="price-tag">Free</p>
+            </div>
+    
+            <div class="plan plan2">
+    
+                <h2>Dog</h2>
+                <p>Common, yet regarded by many as the worst house pet
+                    yet regarded by many as the worst house pet.
+                    yet regarded by many as the worst house pet
+                </p>
+                    <p class="price-tag">$90</p>
+                </div>
+    
+                <div class="plan plan2">
+    
+                    <h2>Fish</h2>
+                    <p>Cheap and easy</p>
+                        <p class="price-tag">$3</p>
+                    </div>
+        <!-- </div>     -->
+      </section>
+      <footer>&copy; 2020 Harriet.</footer>
+    </div>
+    </div>
+  </body>
+</html>
